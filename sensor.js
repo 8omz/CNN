@@ -1,14 +1,14 @@
+//Sensor Desc: It's probably best to keep the numbers of sensors low as multiple cause over precision (?) based on what i've seen
 class Sensor {
     constructor(car) {
         this.car = car;
-        this.rayCount = 15;
+        this.rayCount = 5;
         this.rayLength = 150;
         this.raySpread = Math.PI / 2;
 
         this.rays = [];
         this.readings = [];
     }
-//freakyyyy code line
     update(roadBorders, traffic) {
         this.#castRays();
         this.readings = []
