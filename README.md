@@ -7,11 +7,9 @@ This project is a self-driving car simulation built using JavaScript, neural net
 - **🧠 Neural Networks**: Utilizes neural networks to simulate decision-making processes.
 - **🚧 Collision Detection**: Implements advanced collision detection using geometric algorithms.
 - **🚦 Dynamic Environment**: Supports a dynamic environment with traffic simulation.
-- **💻 Modern JavaScript**: Makes use of modern JavaScript features and methods for efficient coding.
-
 ## Learning Objectives
 By working on this project, I am learning:
-- **📜 JavaScript**: Deepening my understanding of modern JavaScript features such as ES6+ syntax, array methods, and object-oriented programming.
+- **📜 JavaScript**: Deepening my understanding of modern JavaScript features such as ES6 syntax, array methods.
 - **🧠 Neural Networks**: Gaining practical experience in implementing and training neural networks for real-time decision-making.
 - **📏 Collision Detection**: Learning geometric algorithms for detecting intersections and handling collisions.
 - **📊 Simulation and Visualization**: Understanding how to create dynamic simulations and visualize complex data in real-time.
@@ -20,9 +18,9 @@ By working on this project, I am learning:
 In future iterations, I plan to add:
 - **🧠 Improved Neural Network**: Enhance the neural network's learning algorithm for better decision-making.
 - **🚦 Traffic Simulation**: Add more sophisticated traffic patterns and behaviors to create a more challenging environment.
-- **🛑 Obstacle Avoidance**: Implement advanced obstacle avoidance techniques to improve navigation.
-- **🖥️ User Interface**: Develop a user-friendly interface for easier interaction and configuration of the simulation parameters.
-- **⚡ Performance Optimization**: Optimize the code for better performance, especially when handling multiple cars and complex environments.
+- **🛑 Obstacle generartion**: Implement advanced obstacle generation.
+- **🖥️ User Interface**: Develop a user-friendly interface for easier interaction and configuration of the simulation parameters (Pause,play,etc...).
+- **⚡ Performance Optimization**: Optimize the code for better performance, especially when handling multiple cars and complex environments (It does get laggy when creating over 1000+ cars).
 
 ## Usage
 To run the simulation, open the `index.html` file in your web browser (Or just use the github.io link in the description above 😁). Once inside you'll see a 'How it works' section on the left, that should give you the tools needed to use and understand it.
