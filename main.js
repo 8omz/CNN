@@ -17,7 +17,7 @@ if (localStorage.getItem("bestBrain")) {
 /*change the # value to either make the itterations more or less similar
 (as the amount incraeses = increase randomnesss of the mutation, 
 as the amount decreasses = decreasses the randomness of the mutations. )*/
-            NeuralNetwork.mutate(cars[i].brain, 0.01)
+            NeuralNetwork.mutate(cars[i].brain, 0.1)
         }
     }
 }
