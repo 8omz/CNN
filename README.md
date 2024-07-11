@@ -25,7 +25,7 @@ In future iterations, I plan to add:
 - **⚡ Performance Optimization**: Optimize the code for better performance, especially when handling multiple cars and complex environments.
 
 ## Usage
-To run the simulation, open the `index.html` file in your web browser. Use the arrow keys to manually control the car, and observe how it interacts with the environment. (Or just use the github.io link in the description above 😁)
+To run the simulation, open the `index.html` file in your web browser (Or just use the github.io link in the description above 😁). Once inside you'll see a 'How it works' section on the left, that should give you the tools needed to use and understand it.
 
 ## Acknowledgements
 This project was inspired by a tutorial that provided a comprehensive guide to building a self-driving car simulation using JavaScript. Special thanks to the tutorial creator for their detailed explanations and guidance. 🙏
