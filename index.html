@@ -6,16 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SD car</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="body2">
+        <div class="description">
+            <h1>How to work it! 🚘</h1>
+            <h2>Overview</h2>
+            <p>Instead of providing a detailed step by step explanation (because i'm lazy and truth be told not super
+                fluent in this yet), here's a simplified summary of how the
+                simulation works.</p>
 
-    <canvas id="carCanvas"></canvas>
-    <div id="verticalButtons">
-        <button onclick="save()">💾</button>
-        <button onclick="discard()">🚮</button>
+            <h2>Parallelizations</h2>
+            <ul>
+                <li>A set number of cars (defined by <code>n</code>) are sent forward with the goal of navigating
+                    through traffic.</li>
+                <li>These cars are referred to as parallelizations, representing alternate scenarios or potential paths
+                    the car could take.</li>
+            </ul>
+
+            <h2>Selecting the Best Car</h2>
+            <ul>
+                <li>Among all the parallelizations, one car is expected to be superior due to the inherent randomness of
+                    the neural network.</li>
+                <li>Each car undergoes a unique mutation, and the best car is determined by the one that has progressed
+                    the furthest, measured by its Y value.</li>
+                <li> In other words, higher the y value the more "performant" the car is.</li>
+            </ul>
+
+            <h2>Saving the Best Car</h2>
+            <ul>
+                <li>When you identify a high-performing car, click the save button (💾) to preserve it as your best car.
+                </li>
+                <li>All future iterations/parallelizations will use this saved car as a base.</li>
+                <li>Each new mutation will slightly adjust the neural network parameters of this base car.</li>
+                <li>Continue saving the top-performing car until you achieve one that completes the course.</li>
+            </ul>
+            <h2>Deleting the Best Car</h2>
+            <ul>
+                <li>I highly recommend that before starting your first run, you click the discard (🚮) button to "wipe
+                    the slate clean". This ensures that there are no cars defined as the best yet.</li>
+                <li>This feature is best used in case you accidentally save a mutation that you would rather not have
+                    (maybe the mutation is boring, bugged, etc.).</li>
+                <li>Note that this doesn't need to be used before saving a new best car, as the save function overwrites
+                    whatever your last best car was.</li>
+            </ul>
+
+            <h2>Visualization</h2>
+            <p>The visualization on the right demonstrates the current car's "thought process." It shows how the neural
+                network and its layers interact to generate the output, translating inputs into decisions.</p>
+
+        </div>
     </div>
-    <canvas id="networkCanvas"></canvas>
+    <div class="body">
+        <canvas id="carCanvas"></canvas>
+        <div id="verticalButtons">
+            <button onclick="save()">💾</button>
+            <button onclick="discard()">🚮</button>
+        </div>
+        <canvas id="networkCanvas"></canvas>
+    </div>
+    <script src="desc.js"></script>
     <script src="controls.js"></script>
     <script src="visualizer.js"></script>
     <script src="network.js"></script>
