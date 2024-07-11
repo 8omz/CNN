@@ -14,12 +14,15 @@ if (localStorage.getItem("bestBrain")) {
         cars[i].brain = JSON.parse(
             localStorage.getItem("bestBrain"));
         if (i != 0) {
-            NeuralNetwork.mutate(cars[i].brain, 0.2)
+/*change the # value to either make the itterations more or less similar
+(as the amount incraeses = increase randomnesss of the mutation, 
+as the amount decreasses = decreasses the randomness of the mutations. )*/
+            NeuralNetwork.mutate(cars[i].brain, 0.01)
         }
     }
 }
 
-
+//Add more cars with designated positions for more obstacles
 const traffic = [
     new Car(road.getLaneCenter(1), -100, 30, 50, "DUMMY", 2),
     new Car(road.getLaneCenter(0), -300, 30, 50, "DUMMY", 2),
@@ -28,7 +31,8 @@ const traffic = [
     new Car(road.getLaneCenter(0), -500, 30, 50, "DUMMY", 2),
 
     new Car(road.getLaneCenter(0), -300, 30, 50, "DUMMY", 2),
-    new Car(road.getLaneCenter(2), -300, 30, 50, "DUMMY", 2)
+    new Car(road.getLaneCenter(2), -300, 30, 50, "DUMMY", 2),
+    new Car(road.getLaneCenter(2), -600, 30, 50, "DUMMY", 2)
 
 ]
 
